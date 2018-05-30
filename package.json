@@ -1,0 +1,21 @@
+{
+  "name": "snips-nlu-js",
+  "version": "0.0.1",
+  "description": "NodeJS bindings for snips-nlu-rs",
+  "main": "lib/index.js",
+  "author": "Barry Allwood <ballwood@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.1.22"
+  },
+  "scripts": {
+    "clean": "neon clean && rm -rf ./node_modules",
+    "build": "neon build",
+    "install": "neon build",
+    "cli": "node cli.js"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}

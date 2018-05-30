@@ -1,0 +1,19 @@
+[package]
+name = "snips-nlu-js"
+version = "0.0.1"
+authors = ["Barry Allwood <Barry.Allwood@fil.com>"]
+license = "MIT"
+build = "build.rs"
+
+[lib]
+name = "snips_nlu"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.22"
+
+[dependencies]
+neon = "0.1.22"
+serde_json = "1.0"
+neon-serde = "0.0.3"
+snips-nlu-lib = { git = "https://github.com/snipsco/snips-nlu-rs", branch = "master" }
