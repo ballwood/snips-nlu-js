@@ -1,7 +1,7 @@
 [package]
 name = "snips-nlu-js"
 version = "0.0.1"
-authors = ["Barry Allwood <Barry.Allwood@fil.com>"]
+authors = ["Barry Allwood <ballwood@users.noreply.github.com>"]
 license = "MIT"
 build = "build.rs"
 
