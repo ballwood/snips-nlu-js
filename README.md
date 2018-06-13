@@ -24,6 +24,28 @@ curl https://sh.rustup.rs -sSf | sh
 npm install
 ```
 
+Building versions for AWS Lambda
+----------------------
+
+#### Prerequisite
+Set max container memory to 4gb. snips-nlu-rs uses a lot when compiling
+
+#### Build docker container
+```shell
+docker build -t snips-nlu-js .
+```
+
+#### Run docker container
+```shell
+docker run -t -i snips-nlu-js
+```
+You may also want to mount a local filesystem to the directory /work so you can extract the files from the container with the `-v /host/directory:/work` command
+
+#### Build
+```shell
+npm install
+```
+
 Usage
 ----------------------
 Currently only local usage only, binaries will be published on release
