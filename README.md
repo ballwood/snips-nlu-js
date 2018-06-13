@@ -24,11 +24,11 @@ curl https://sh.rustup.rs -sSf | sh
 npm install
 ```
 
-Building versions for AWS Lambda
+Building for AWS Lambda
 ----------------------
 
 #### Prerequisite
-Set max container memory to 4gb. snips-nlu-rs uses a lot when compiling
+Set dockers max container memory to 4gb. snips-nlu-rs uses a lot when compiling. See the issue [here](https://github.com/snipsco/snips-nlu-rs/issues/22#issuecomment-396869682) 
 
 #### Build docker container
 ```shell
